@@ -1,0 +1,15 @@
+// BASE
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/utilities';
+
+// COMPONENTES
+@import 'components/navbar';
+@import 'components/footer';
+
+// LAYOUT
+@import 'layout/index';
+@import 'layout/calendario';
+@import 'layout/pilotos';
+@import 'layout/equipos';
+@import 'layout/acerca-de-mi';

@@ -1,0 +1,125 @@
+
+// CALENDARIO
+
+.card-calendario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 630px) {
+    .card-calendario {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area1'
+            'area2 area3'
+            'area4 area5'
+            'area6 area7';
+    }
+}
+@media (min-width: 1080px) {
+    .card-calendario {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area1 area4 area5'
+            'none area6 area7';
+    }
+}
+.cal1{
+    grid-area: area1;
+}
+.cal2{
+    grid-area: area2;
+}
+.cal3{
+    grid-area: area3;
+}
+.cal4{
+    grid-area: area4;
+}
+.cal5{
+    grid-area: area5;
+}
+.cal6{
+    grid-area: area6;
+}
+.cal7{
+    grid-area: area7;
+}
+
+
+
+// HORARIO
+
+.card-horario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 540px) {
+    .card-horario {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 none';
+    }
+}
+@media (min-width: 735px) {
+    .card-horario {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 none none';
+    }
+}
+@media (min-width: 1080px) {
+    .card-horario {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3 area4'
+            'area5 area6 area7 none';
+    }
+}
+.d1{
+    grid-area: area1;
+}
+.d2{
+    grid-area: area2;
+}
+.d3{
+    grid-area: area3;
+}
+.d4{
+    grid-area: area4;
+}
+.d5{
+    grid-area: area5;
+}
+.d6{
+    grid-area: area6;
+}
+.d7{
+    grid-area: area7;
+}
+

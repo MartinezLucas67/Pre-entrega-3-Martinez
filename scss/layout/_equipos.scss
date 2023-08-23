@@ -1,0 +1,71 @@
+
+// EQUIPOS
+
+.cardequipos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7'
+        'area8'
+        'area9'
+        'area10';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 630px) {
+    .cardequipos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 area8'
+            'area9 area10';
+    }
+}
+@media (min-width: 1080px) {
+    .cardequipos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 area8 area9'
+            'area10 none none';
+    }
+}
+.t1{
+    grid-area: area1;
+}
+.t2{
+    grid-area: area2;
+}
+.t3{
+    grid-area: area3;
+}
+.t4{
+    grid-area: area4;
+}
+.t5{
+    grid-area: area5;
+}
+.t6{
+    grid-area: area6;
+}
+.t7{
+    grid-area: area7;
+}
+.t8{
+    grid-area: area8;
+}
+.t9{
+    grid-area: area9;
+}
+.t10{
+    grid-area: area10;
+}

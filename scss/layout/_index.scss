@@ -1,0 +1,142 @@
+
+
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+// HACER LOS MIXIN
+
+
+// CAJITA
+.cajita {
+    @include cajas(15px,100%,480px,0 auto);
+    :hover .contenido{
+        display: block;
+    }
+}
+.contenido {
+    display: none;
+}
+
+
+// CAJA
+.caja {
+    @include cajas(15px,100%,480px,0 auto);
+    // CARD BORDER
+    .card-border{
+        border: 5px $border-color-dark solid;
+        border-radius: 10px;
+        transition: 0.6s;
+        &:hover{
+            border: 5px $border-color-light solid;
+            border-radius: 10px;        
+        }
+    }
+     
+}
+
+//CAJA INDEX
+.caja-index {
+    @include cajas(15px,100%,480px,0 auto);
+    .card{
+        transition: 0.6s;
+        &:hover{
+            background-color: $bg-color-dark;
+        }
+    }
+     
+} 
+
+// MICARD-TEXT
+.micard-text{
+    background-color: $bg-color-light;
+    margin: 10px;
+    padding: 5px;
+    border: 5px $border-color-dark solid;
+    border-radius: 20px;
+    color: $text-color-dark;
+    transition: 0.6s;
+    &:hover{
+        background-color: $bg-color-dark;
+        color: $text-color-light;
+        border: 5px $border-color-light solid;
+        border-radius: 20px;        
+    }
+}
+
+
+
+
+// CARDS
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+@media (min-width: 1085px) {
+    .cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
+
+// MICARD
+.micard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5';
+    gap: 15px;
+    padding-top: 30px;
+}
+
+@media (min-width: 964px) {
+    .micard {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area5';
+    }
+}
+@media (min-width: 1085px) {
+    .micard {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area1 area2 area2'
+            'area3 area3 area4 area4'
+            'area5 area5 area5 area5';
+    }
+}
+@media (min-width: 1461px) {
+    .micard {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area5'
+            'area3 area4 area5';
+    }
+}
+
+.c1{
+    grid-area: area1;
+}
+.c2{
+    grid-area: area2;
+}
+.c3{
+    grid-area: area3;
+}
+.c4{
+    grid-area: area4;
+}
+.c5{
+    grid-area: area5;
+}

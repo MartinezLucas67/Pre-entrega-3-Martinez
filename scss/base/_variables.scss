@@ -1,0 +1,47 @@
+// FUENTE
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+
+
+$main-color:#001421;
+$text-color-light:#fff;
+$text-color-dark:#000000;
+$bg-color-dark: #990001;
+$bg-color-light: #fff;
+$border-color-light: #fff;
+$border-color-dark: #990001;
+
+
+
+
+
+// MAIN
+
+main{
+    background: $main-color;
+    text-align: center;
+    overflow: hidden;
+}
+.sec-titulo{
+    font-family: 'Roboto',sans-serif;
+    font-size: 50px;
+    margin: 15px;
+}
+
+// H1
+h1{
+    color: $text-color-dark;
+    font-family: 'Roboto',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+// BODY
+body{
+    background: $main-color;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+
+

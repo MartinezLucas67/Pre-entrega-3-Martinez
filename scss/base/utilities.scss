@@ -1,0 +1,10 @@
+
+// UTILITIES
+
+// MIXIN
+@mixin cajas($padding,$width,$max-width,$margin){
+    padding: $padding;
+    width: $width;
+    max-width: $max-width;
+    margin: $margin;
+}

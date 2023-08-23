@@ -1,0 +1,77 @@
+
+// PILOTOS
+
+.card-body h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.cardpiloto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7'
+        'area8';
+    gap: 15px;
+}
+@media (min-width: 630px) {
+    .cardpiloto {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 area8';
+    }
+}
+@media (min-width: 900px) {
+    .cardpiloto {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 area8 none';
+    }
+}
+@media (min-width: 1280px) {
+    .cardpiloto {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3 area4'
+            'area5 area6 area7 area8';
+    }
+}
+
+
+.p1{
+    grid-area: area1;
+}
+.p2{
+    grid-area: area2;
+}
+.p3{
+    grid-area: area3;
+}
+.p4{
+    grid-area: area4;
+}
+.p5{
+    grid-area: area5;
+}
+.p6{
+    grid-area: area6;
+}
+.p7{
+    grid-area: area7;
+}
+.p8{
+    grid-area: area8;
+}
+
